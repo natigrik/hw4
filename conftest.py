@@ -2,15 +2,15 @@ import pytest
 
 from selenium import webdriver
 
-DRIVERS = "C:/Users/user/Develop/drivers"
+# DRIVERS = "C:/Users/user/Develop/drivers"
+DRIVERS = "C:/Users/Nata/Develop/drivers"
 
 
 def pytest_addoption(parser):
     parser.addoption("--maximized", action="store_true")
     parser.addoption("--headless", action="store_true")
     parser.addoption("--browser", action="store", choices=["chrome", "firefox", "opera", "edge"], default="chrome")
-    parser.addoption("--url", action="store", default="http://192.168.50.122:8081")
-    # parser.addoption("--url", action="store", default="https://demo.opencart.com")
+    parser.addoption("--url", action="store", default="https://demo.opencart.com")
 
 
 @pytest.fixture(scope="session")
