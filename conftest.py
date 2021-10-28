@@ -2,8 +2,7 @@ import pytest
 
 from selenium import webdriver
 
-# DRIVERS = "C:/Users/user/Develop/drivers"
-DRIVERS = "C:/Users/Nata/Develop/drivers"
+DRIVERS = "C:/Users/user/Develop/drivers"
 
 
 def pytest_addoption(parser):
